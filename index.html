@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input id="inputQuery" placeholder="Masukkan sesuatu...">
+
+    <button onClick="search()">Search</button>
+    <button onClick="lucky()">Lucky</button>
+</body>
+
+<!-- Javascript -->
+<script>
+    function search() {
+        let inputQueryValue = document.getElementById("inputQuery").value;
+
+        location.href = "https://google.com/search?q="+inputQueryValue;
+    }
+
+    function lucky() {
+        let inputQueryValue = document.getElementById("inputQuery").value;
+
+        location.href = "https://google.com/search?q="+inputQueryValue+"&btnI";
+    }
+</script>
+</html>
